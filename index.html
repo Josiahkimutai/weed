@@ -1,62 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Weed Connect 🌿</title>
+  <meta charset="UTF-8">
+  <title>Sign Up - GreenLeaf</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-image: url('backgroudd.jpg'); /* Replace with your image name */
-      background-size: cover;
+      padding: 0;
+      background-image: url('backgroudd.jpeg'); /* Use your uploaded image name */
+      background-size:contain;
       background-position: center;
       background-repeat: no-repeat;
-      color: #fff;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
+      height: 100vh;
     }
-
-    .container {
-      background-color: rgba(0, 0, 0, 0.6);
+    .signup-container {
+      width: 350px;
+      margin: 100px auto;
       padding: 30px;
+      background: rgba(188, 7, 243, 0); /* Slightly transparent white */
       border-radius: 10px;
-      max-width: 500px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      margin-top: 30px ;
+    }
+    h2 {
+      text-align: center;
+      color: #08e913;
+      padding: 30px;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
       width: 100%;
+      padding-bottom: 12px;
+      margin: 10px 0;
+      border: 1px solid #cccccc3a;
+      border-radius: 6px;
+      background-color: transparent;
+      color: #ebe70f;
+    
+    
+    
+
     }
 
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+    label {
+      font-weight: bold;
+      color: #62ec05;
     }
-
-    p {
-      font-size: 1em;
+    .checkbox-label {
+      font-weight: normal;
+      font-size: 0.9em;
     }
-
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 3em;
-      }
-
-      p {
-        font-size: 1.2em;
-      }
+    button {
+      width: 100%;
+      background: #e6060656;
+      color: rgba(255, 255, 255, 0.349);
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+      border-color: red;
+    }
+    button:hover {
+      background: #34f105;
+    }
+    .legal {
+      font-size: 0.85em;
+      color: #42e90f;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Weed Connect 🌿</h1>
-    <p>Welcome to your trusted cannabis hub — connect, learn, and grow with us.</p>
-  </div>
+
+<div class="signup-container">
+  <h2>MOSORIOT WEED CORNER</h2>
+  <form action="register.php" method="POST">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+
+    <label class="checkbox-label">
+      <input type="checkbox" name="age_confirm" required> I confirm I am 18 years or older
+    </label>
+
+    <button type="submit">Sign Up</button>
+
+    <p class="legal">By signing up, you agree to our Terms & Privacy Policy.</p>
+  </form>
+</div>
+
 </body>
 </html>
