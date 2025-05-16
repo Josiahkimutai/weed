@@ -1,89 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sign Up - GreenLeaf</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weed Connect 🌿</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background-image: url('background.jpeg'); /* Use your uploaded image name */
-      background-size:contain;
+      font-family: 'Segoe UI', sans-serif;
+      background-image: url('background.jpg'); /* Replace with your image name */
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      height: 100vh;
-    }
-    .signup-container {
-      width: 350px;
-      margin: 80px auto;
-      padding: 30px;
-      background: rgba(255, 255, 255, 0); /* Slightly transparent white */
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-    }
-    h2 {
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      color: #e71212;
+      padding: 20px;
     }
-    input[type="text"], input[type="email"], input[type="password"] {
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
       width: 100%;
-      padding: 12px;
-      margin: 10px 0;
-      border: 1px solid #cccccc23;
-      border-radius: 6px;
     }
-    label {
-      font-weight: bold;
-      color: #333;
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
     }
-    .checkbox-label {
-      font-weight: normal;
-      font-size: 0.9em;
+
+    p {
+      font-size: 1em;
     }
-    button {
-      width: 100%;
-      background: #2e7d32;
-      color: rgba(255, 255, 255, 0.205);
-      border: none;
-      padding: 12px;
-      font-size: 16px;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #642525;
-    }
-    .legal {
-      font-size: 0.85em;
-      color: #555;
-      margin-top: 10px;
+
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 3em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
 <body>
-
-<div class="signup-container">
-  <h2>Create Your Account</h2>
-  <form action="register.php" method="POST">
-    <label for="username">Username</label>
-    <input type="text" id="username" name="username" required>
-
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
-
-    <label class="checkbox-label">
-      <input type="checkbox" name="age_confirm" required> I confirm I am 18 years or older
-    </label>
-
-    <button type="submit">Sign Up</button>
-
-    <p class="legal">By signing up, you agree to our Terms & Privacy Policy.</p>
-  </form>
-</div>
-
+  <div class="container">
+    <h1>Weed Connect 🌿</h1>
+    <p>Welcome to your trusted cannabis hub — connect, learn, and grow with us.</p>
+  </div>
 </body>
 </html>
